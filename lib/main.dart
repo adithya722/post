@@ -14,9 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Simple Post App',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      
       home: HomeScreen(),
     );
   }
@@ -32,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   final List<Widget> _children = [
     PostScreen(contentType: 'text', content: 'This is a text post.'),
-    PostScreen(contentType: 'video', content: 'assets/sample-1.mp4'),
+    PostScreen(contentType: 'video', content: 'assets/sample-2.mp4'),
     PostScreen(contentType: 'image', content: 'assets/computer.jpg'),
   ];
 
